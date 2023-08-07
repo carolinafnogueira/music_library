@@ -17,4 +17,4 @@ We can format albums to strings nicely
 
 def test_albums_format_nicely():
     album = Album(1, 'Doolittle', 1989, 1)
-    assert str(album) == Album(1, 'Doolittle', 1989, 1)
+    assert str(album) == 'Album(1, Doolittle, 1989, 1)'

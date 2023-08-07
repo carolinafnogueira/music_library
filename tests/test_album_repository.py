@@ -19,7 +19,8 @@ def test_get_all_album_records(db_connection):
         Album(6, 'Lover', 2019, 3),
         Album(7, 'Folklore', 2020, 3),
         Album(8, 'I Put a Spell on You', 1965, 4),
-        Album(9, 'Here Comes the Sun', 1971, 4),
-        Album(10, 'Fodder on My Wings', 1982, 4),
-        Album(11, 'Ring Ring', 1973, 2)
+        Album(9, 'Baltimore', 1978, 4),
+        Album(10, 'Here Comes the Sun', 1971, 4),
+        Album(11, 'Fodder on My Wings', 1982, 4),
+        Album(12, 'Ring Ring', 1973, 2),
     ]
