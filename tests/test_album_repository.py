@@ -24,3 +24,14 @@ def test_get_all_album_records(db_connection):
         Album(11, 'Fodder on My Wings', 1982, 4),
         Album(12, 'Ring Ring', 1973, 2),
     ]
+
+'''
+When we call #find method on AlbumRepository
+We get a single Album object reflecting the seed data.
+'''
+
+def test_get_single_album(db_connection):
+    db_connection.seed('seeds/music_library.sql')
+    repo = AlbumRepository(db_connection)
+    album = repo.find(7)
+    assert album == Album(7, 'Folklore', 2020, 3)

@@ -23,3 +23,10 @@ albums = album_repository.all()
 
 for album in albums:
     print(album)
+
+# Find a single album
+album_repo = AlbumRepository(connection)
+album = album_repo.find(5)
+
+# Show the album selected
+print(album)
