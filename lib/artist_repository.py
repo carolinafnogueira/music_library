@@ -28,6 +28,7 @@ class ArtistRepository:
         self._connection.execute('INSERT INTO artists (name, genre) VALUES (%s, %s)', [
                                  artist.name, artist.genre])
         return None
+        
 
     # Delete an artist by their id
     def delete(self, artist_id):

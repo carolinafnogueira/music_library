@@ -39,7 +39,7 @@ def test_create_record(db_connection):
     repository = ArtistRepository(db_connection)
 
     repository.create(Artist(None, "The Beatles", "Rock"))
-
+    
     result = repository.all()
     assert result == [
         Artist(1, "Pixies", "Rock"),
