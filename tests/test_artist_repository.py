@@ -64,3 +64,12 @@ def test_delete_record(db_connection):
         Artist(2, "ABBA", "Pop"),
         Artist(4, "Nina Simone", "Jazz"),
     ]
+
+'''
+When we call the #find_with_albums method
+We get all the albums asscoiated to a specific artist
+'''
+
+def test_get_albums_for_artist(db_connection):
+    db_connection.seed('seeds/music_library.sql')
+    artist = ArtistRepository(db_connection)
